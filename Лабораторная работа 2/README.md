@@ -33,7 +33,7 @@
 Cкопировали таблицу разделов со старого диска на новый с помощью ``sfdisk -d /dev/sda | sfdisk /dev/sdb``  
 и добавили raid в sdb2 c помощью команды ``mdadm --manage /dev/md0 --add /dev/sdb2``  
 
-![11](https://raw.githubusercontent.com/Antieasy/labs/master/lab2/img/15.PNG "copy table")  
+![11](/15.PNG "copy table")  
 Скопировали /boot, установили grup и выполнили перезагрузку виртуальной машины.  
 В итоге все было успешно восстановлено.  
 ![12](17.PNG "finish task 2")  
