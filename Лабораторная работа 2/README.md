@@ -2,41 +2,41 @@
 Здесь мы устанавливаем и настраиваем операционную систему(debian 10.3.0).Занимаемся настройкой LVM, RAID.  
 ![1](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/1.png "1")  
 Настроили RAID.  
-![2](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/2.PNG "2")  
+![2](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/2.png "2")  
 Настроили LVM.  
-![3](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/3.PNG "3")  
+![3](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/3.png "3")  
 Разметили и выбрали соответствующие точки монтирования.  
-![4](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/4.PNG "4")  
+![4](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/4.png "4")  
 Информация о дисках после копирования /boot с sda на sdb и установки grub.  
 Команда lsblk показала нам 2 диска на 8G и сопутствующую информацию.  
-![5](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/5.PNG "5")  
+![5](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/5.png "5")  
 Информация о текущем RAID с помощью команды cat /proc/mdstat. Здесь мы увидели активный RAID1 на sda2 и sdb2.
-![6](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/6.PNG "6")  
+![6](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/6.png "6")  
 После выполнения задания 1 у нас появилась виртуальная машина с дисками ssd1, ssd2, а также настроенный RAID и LVM.  
   
 ## Часть вторая  
 Нам требуется восстановить работу диска, который вышел из строя.  
-![7](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/10.PNG "lsbk")  
+![7](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/10.png "lsbk")  
 
 Как мы видим, у нас всего лишь один диск, вместо двух.  
 А вот что показывает cat /proc/mdstat после перезагрузки.  
-![8](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/12.PNG "raid info")  
+![8](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/12.png "raid info")  
   
 Создаем в нашей виртуальной машине новый диск и называем его, как сказано в задании, ssd3 <br>
   
-![9](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/13.PNG "VM")  
+![9](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/13.png "VM")  
   
 С помощью команды ``fdisk -l`` убедились, что диск был успешно добавлен.  
 
-![10](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/14.PNG "fdisk")  
+![10](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/14.png "fdisk")  
   
 Cкопировали таблицу разделов со старого диска на новый с помощью ``sfdisk -d /dev/sda | sfdisk /dev/sdb``  
 и добавили raid в sdb2 c помощью команды ``mdadm --manage /dev/md0 --add /dev/sdb2``  
 
-![11](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/15.PNG "copy table")  
+![11](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/15.png "copy table")  
 Скопировали /boot, установили grup и выполнили перезагрузку виртуальной машины.  
 В итоге все было успешно восстановлено.  
-![12](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/17.PNG "finish task 2")  
+![12](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/17.png "finish task 2")  
 
 ## Часть Третья  
 После отказа диска.  
