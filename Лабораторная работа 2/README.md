@@ -1,6 +1,6 @@
 ## Часть первая  
 Здесь мы устанавливаем и настраиваем операционную систему(debian 10.3.0).Занимаемся настройкой LVM, RAID.  
-![1](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/1.PNG "1")  
+![1](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/1.png "1")  
 Настроили RAID.  
 ![2](https://raw.githubusercontent.com/stobox07/labs-OS/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/2.PNG "2")  
 Настроили LVM.  
